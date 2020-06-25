@@ -1,10 +1,14 @@
 <template>
   <div id="app">
+    <!-- // 頁面的入口 -->
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+     
+      <router-link to="/money">money</router-link> |
+      <router-link to="/label">label</router-link>|
+      <router-link to="/statistics">statistics</router-link>
     </div>
-    <router-view/>
+    <!-- router-view 就是指定渲染路由中指定路徑下顯示組件的地方 -->
+    <router-view />
   </div>
 </template>
 
