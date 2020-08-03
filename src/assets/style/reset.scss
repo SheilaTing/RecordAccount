@@ -1,0 +1,32 @@
+// #app {
+//     font-family: Avenir, Helvetica, Arial, sans-serif;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     text-align: center;
+//     color: #2c3e50;
+//   }
+  *{
+    margin:0;padding:0;
+    box-sizing:border-box;
+  }
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+  ul,ol{
+      list-style: none;
+  }
+
+  // button 的字体默认是宋体，改为黑体
+  button,input{
+      font:inherit;
+  }
+//任何被选中的元素的点击边框为无
+  :focus{
+    outline:none;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+  }

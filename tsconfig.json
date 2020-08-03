@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // "noEmitOnError": true, // 如果报错了就不触发编译,也就是不能运行最新的编译文件,还是不了吧
     "target": "esnext",
     "module": "esnext",
     "strict": true,

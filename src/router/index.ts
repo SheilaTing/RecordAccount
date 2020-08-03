@@ -4,6 +4,7 @@ import Money from '@/views/Money.vue';
 import Label from '@/views/Label.vue';
 import Statistics from '@/views/Statistics.vue';
 import Notfund from '@/views/Notfund.vue';
+import EditLabel from '@/views/EditLabel.vue';
 // 配置路由
 
 Vue.use(VueRouter)
@@ -15,22 +16,26 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/money',
-    name: 'money',
+    name: '记账',
     component: Money
   },
   {
     path: '/label',
-    name: 'label',
+    name: '标签',
     component: Label
   },
   {
     path: '/statistics',
-    name: 'statistics',
+    name: '统计',
     component: Statistics
   },
   {
-    path:'*',
-    component:Notfund
+    path:'/labels/edit/:id', //获得点击的地址栏中 edit/后的内容 ：id 用来占位
+    component:EditLabel,
+  },
+  {
+    path: '*',
+    component: Notfund
   }
 ]
 //   {
